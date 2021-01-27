@@ -1,5 +1,6 @@
 package com.citibank.rewards.balance.configuration;
 
+import org.springframework.web.servlet.mvc.method.RequestMappingInfo.BuilderConfiguration;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class BalanceInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
@@ -7,7 +8,7 @@ public class BalanceInitializer extends AbstractAnnotationConfigDispatcherServle
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		
-		return new Class[] {BalanceConfiguration.class};
+		return new Class[] {BuilderConfiguration.class};
 	}
 
 	@Override
